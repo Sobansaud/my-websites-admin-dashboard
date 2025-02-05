@@ -11,7 +11,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activePage, setActivePage }) => {
         <div className="w-64 bg-white shadow-md p-4">
             <h2 className="font-bold text-xl mb-6">Dashboard</h2>
             <ul className="space-y-4">
-                {["orders", "sales", "visitors", "analytics", "settings"].map((page) => (
+                {["orders", "sales", "visitors","products","add-products", "analytics", "settings"].map((page) => (
                     <li key={page}>
                         <button
                             onClick={() => setActivePage(page)}
